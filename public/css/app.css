@@ -1,0 +1,55 @@
+body {
+    min-width: 1024px;
+}
+
+.container-wrap{
+    padding-top: 36px !important;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.tooltip-inner {
+    max-width: 350px !important;
+}
+
+.navbar{
+     height: 36px !important;
+     background-color: #58B346;
+ }
+
+.navbar-default {
+    background-color: #58B346;
+}
+
+.page-title{
+    font-size: 16px;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.modal-option{
+    width: 100%;
+    color: #007FEB;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.modal-option .fas{
+    font-size: 1rem;
+}
+
+.modal-seperator{
+    height: 1px;
+    border: 0.5px solid #E7E7E7;
+    margin: 15px 10px 15px 10px;
+}
+
+a[aria-expanded="true"]{
+    color: #7F7F7F;
+}
+
+.no-decoration{
+    text-decoration: none !important;
+}

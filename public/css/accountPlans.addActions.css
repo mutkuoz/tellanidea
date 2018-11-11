@@ -1,0 +1,6 @@
+input, textarea{
+    margin-bottom: 1rem;
+}
+textarea{
+    height: 6rem;
+}

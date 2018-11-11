@@ -1,0 +1,13 @@
+td {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100px;
+}
+
+tr {
+    text-overflow: ellipsis;
+}
+table {
+    font-size: x-small;
+}

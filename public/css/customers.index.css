@@ -1,0 +1,49 @@
+.page-number{
+    color: white;
+    padding-left: 0.5rem;
+    padding-right: 0px;
+}
+
+.customer-card {
+    float: left;
+    height: 7.0rem;
+    max-height: 7.0rem;
+}
+
+@media screen /*laptops*/
+and (min-device-width: 1200px)
+and (-webkit-min-device-pixel-ratio: 1) {
+    .customer-card{
+        width: 25.0%;
+    }
+}
+
+/* Iphone Portrait */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+    .customer-card{
+        width: 100%;
+    }
+    .searchText {
+        display: none !important;
+        visibility: hidden;
+    }
+
+}
+
+/* Iphone Lanscape */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+    .customer-card{
+        width: 50%;
+    }
+    .searchText {
+        display: inline !important;
+    }
+}

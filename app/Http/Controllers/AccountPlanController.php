@@ -176,7 +176,8 @@ inner join
 
     public function index()
     {
-        //
+        $this->prepareCommonViews(array('showChangeUserButton'=>false,'title'=>'Account Planner', 'showBackButton'=>true));
+        return view('Accountplans.index');
     }
     public function create()
     {
@@ -210,7 +211,12 @@ inner join
         $customerList=Customer::find( $customerId);
         $accountPlan=AccountPlan::where('active', 1)->where('customer_id',$customerId)->first();
         $opportunities=Opportunity::where('accountPlan_id','=',$accountPlan['id'])->get();
-        $this->prepareCommonViews();
+        $this->prepareCommonViews(array('showChangeUserButton'=>false));
         return view('AccountPlans.show', compact('customerList','selectedUsers', 'customerId','accountPlan','opportunities'));
+    }
+
+    public function valueSimulator(){
+        $this->prepareCommonViews();
+        return view('AccountPlans.valueSimulator');
     }
 }
