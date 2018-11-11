@@ -442,7 +442,8 @@ $(document).ready(function () {
         let companySelector = $('#company-selector');
         companySelector.empty();
         let optionsTextCompanies = '<option value="" disabled selected hidden>Company...</option>';
-        companies.forEach(function (e) {
+        Object.keys(companies).forEach(function (companyKey) {
+            let e=companies[companyKey];
             let penetratedProductIds = (e.hasOwnProperty('penetratedProductIds')) ? e['penetratedProductIds'] : [];
             optionsTextCompanies += '<option data-company-id="' + e.id + '" data-penetrated-product-ids="[' +
                 penetratedProductIds.toString()
